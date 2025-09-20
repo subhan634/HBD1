@@ -125,5 +125,3 @@ body {
   from { transform: scale(1); opacity: 1; }
   to { transform: scale(3); opacity: 0; }
 }
-
-

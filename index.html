@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Heart with text -->
+  <div class="heart-container" id="heartContainer">
+    <div class="heart" id="heart" onclick="blastHeart()">❤️</div>
+    <p class="click-text">Click on Heart</p>
+  </div>
+
+  <!-- Surprise Box -->
+  <div class="surprise-box hidden" id="surpriseBox" onclick="revealMessage()">
+    <h3>🎁 Click Here 🎁</h3>
+  </div>
+
+  <!-- Final Message -->
+  <div class="message" id="message">
+    <h2>🌸✨ Happy Birthday Muhammad! ✨🌸</h2>
+    <p>
+      Wishing you endless joy, success, and good health.  
+      May every moment of your life be filled with happiness and smiles! 🎂🎉
+    </p>
+    <button id="playSongBtn" class="hidden" onclick="playSong()">Click Here 🎶</button>
+    <h3 id="fromSubhan" class="hidden">✨ From Subhan ✨</h3>
+  </div>
+
+  <!-- Audio -->
+  <audio id="birthdaySong" src="Happy Birthday Song Download  Mp3  Audio  Free.mp3"></audio>
+
+  <!-- Video (hidden by default) -->
+  <div class="video-container hidden" id="videoContainer">
+    <video id="memoryVideo" width="480" controls>
+      <source src="memory.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
